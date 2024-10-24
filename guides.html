@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Guides - DEVMPIRE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            transition: background-color 0.3s;
+            font-weight: 500;
+            margin-right: 1rem;
+        }
+
+        .navbar a:hover {
+            background-color: #004494;
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #004494;
+        }
+
+        /* Main Container Styles */
+        .container {
+            max-width: 1300px;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 1.5rem;
+        }
+
+        .guides {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .guide {
+            background-color: #e9ecef;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem;
+            flex: 1 1 calc(30% - 2rem); /* Adjusting for margin */
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .guide:hover {
+            transform: scale(1.05);
+        }
+
+        .guide img {
+            width: 50px; /* Adjust logo size */
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+
+        /* Additional Section Styles */
+        .section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #f1f3f5;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            border-top: 2px solid #0056b3;
+            margin-top: 2rem;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-icons {
+            margin: 0.5rem 0;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .guide {
+                flex: 1 1 calc(100% - 2rem); /* Full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">DEVMPIRE</div>
+        <nav class="navbar">
+            <a href="/Home Page/main.html">Home</a>
+            <a href="#tools">Tools</a>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Coding Guides</h1>
+        <div class="guides">
+            <div class="guide">
+                <img src="/Home Page/Logos and Icons/java-logo-transparent-free-png.webp" alt="Java Logo">
+                <h2>Java</h2>
+                <p>Explore our comprehensive guide on Java programming, from basics to advanced topics.</p>
+            </div>
+            <div class="guide">
+                <img src="/Home Page/Logos and Icons/Python.jpeg" alt="Python Logo">
+                <h2>Python</h2>
+                <p>Get started with Python programming with our easy-to-follow guides and real-world examples.</p>
+            </div>
+            <div class="guide">
+                <img src="/Home Page/Logos and Icons/CSharplogo.jpeg" alt="C# Logo">
+                <h2>C#</h2>
+                <p>Dive into C# programming with our detailed resources, including game development and web applications.</p>
+            </div>
+            <div class="guide">
+                <img src="/Home Page/Logos and Icons/javascriptlogo.png" alt="JavaScript Logo">
+                <h2>JavaScript</h2>
+                <p>Master JavaScript with our expert guides, covering both front-end and back-end development.</p>
+            </div>
+            <div class="guide">
+                <img src="/Home Page/Logos and Icons/Phplogo.png" alt="PHP Logo">
+                <h2>PHP</h2>
+                <p>Learn PHP programming with our concise guides that include tutorials on web development.</p>
+            </div>
+            <div class="guide">
+                <img src="/Home Page/Logos and Icons/C logo.png" alt="C Logo">
+                <h2>C</h2>
+                <p>Explore the fundamentals of C programming with our guides on algorithms and data structures.</p>
+            </div>
+        </div>
+
+        <!-- Additional Sections with Expanded Content -->
+        <div class="section">
+            <h2>Resources</h2>
+            <p>Access a wide range of programming resources, including:</p>
+            <ul>
+                <li><strong>Tutorials:</strong> Step-by-step guides for beginners and advanced programmers.</li>
+                <li><strong>Documentation:</strong> Comprehensive references for all major programming languages.</li>
+                <li><strong>Coding Challenges:</strong> Enhance your skills with our coding problems and solutions.</li>
+                <li><strong>Webinars:</strong> Join live sessions with industry experts on various programming topics.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Community</h2>
+            <p>Join our community of developers to share knowledge and collaborate on projects:</p>
+            <ul>
+                <li><strong>Forums:</strong> Participate in discussions, ask questions, and get help from fellow developers.</li>
+                <li><strong>Meetups:</strong> Attend local meetups to network with other programmers and learn from each other.</li>
+                <li><strong>Contribution:</strong> Contribute to open-source projects and gain valuable experience.</li>
+                <li><strong>Newsletters:</strong> Subscribe to our newsletter for updates on programming trends and resources.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Support</h2>
+            <p>If you have any questions or need assistance, our support team is here to help:</p>
+            <ul>
+                <li><strong>FAQs:</strong> Check our frequently asked questions for quick answers.</li>
+                <li><strong>Contact Us:</strong> Reach out to our support team via email for personalized assistance.</li>
+                <li><strong>Feedback:</strong> We value your input! Provide feedback to help us improve our resources.</li>
+                <li><strong>Technical Support:</strong> Get help with technical issues or troubleshooting with our detailed guides.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">DEVMPIRE</div>
+        <p>© 2024 DEVMPIRE. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
