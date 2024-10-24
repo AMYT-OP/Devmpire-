@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVMPIRE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Include JS here -->
+</head>
+<body>
+    <header>
+        <div class="logo">DEVMPIRE</div>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#tools">Tools</a>
+            <a href="Community/community.html">Community</a>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to DEVMPIRE</h1>
+        <p>Your one-stop destination for developer tools and resources.</p>
+        <button id="getStartedBtn">Get Started</button> <!-- Modified button -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About DEVMPIRE</h2>
+            <p>
+                DEVMPIRE is more than just a tool repository; it's a hub where developers of all skill levels can find 
+                solutions to streamline their workflows. From code converters to programming guides, DEVMPIRE ensures 
+                that every developer has access to the right tools at the right time.
+            </p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Our Mission</h3>
+                    <p>
+                        Empower developers with powerful, easy-to-use tools that boost productivity, accelerate learning, 
+                        and inspire creativity. We aim to bridge the gap between theory and practical implementation.
+                    </p>
+                </div>
+                <div class="about-item">
+                    <h3>What We Offer</h3>
+                    <ul>
+                        <li>✨ Code conversion between multiple programming languages</li>
+                        <li>🚀 Real-time code compiling to test ideas quickly</li>
+                        <li>📘 In-depth programming guides for all skill levels</li>
+                        <li>🔄 Continuous updates to align with new technologies</li>
+                    </ul>
+                </div>
+            </div>
+            <button onclick="window.location.href='/learn-more'">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-container">
+        <h2>Explore Our Tools</h2>
+        <p class="tools-intro">
+            Discover essential tools designed to enhance your coding experience. Whether you’re converting code, compiling programs, or learning something new, DEVMPIRE has got you covered!
+        </p>
+        <div class="tools-flexbox">
+            <div class="tool-card">
+                <h3>Code Converter</h3>
+                <p>Effortlessly convert code between programming languages.</p>
+                <button onclick="window.location.href='converter.html'">Open Tool</button>
+            </div>
+            <div class="tool-card">
+                <h3>Code Compiler</h3>
+                <p>Compile and execute code with real-time feedback.</p>
+                <button onclick="window.location.href='compiler.html'">Open Tool</button>
+            </div>
+            <div class="tool-card">
+                <h3>Programming Guides</h3>
+                <p>Learn from comprehensive tutorials and best practices.</p>
+                <button onclick="window.location.href='guides.html'">Explore Guides</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="ai-tools" class="ai-tools-section">
+        <h2>AI Tools for Developers</h2>
+        <p class="ai-tools-intro">
+            Leverage powerful AI tools to enhance your development process. Here are some recommended AI tools that can boost your productivity and creativity.
+        </p>
+        <div class="ai-tools-flexbox">
+            <div class="ai-tool-card">
+                <h3>ChatGPT</h3>
+                <p>An AI-powered assistant for code-related queries and programming help.</p>
+                <button onclick="window.location.href='https://chat.openai.com/'">Try ChatGPT</button>
+            </div>
+            <div class="ai-tool-card">
+                <h3>Blackbox</h3>
+                <p>Find code snippets from various repositories effortlessly.</p>
+                <button onclick="window.location.href='https://blackbox.com/'">Explore Blackbox</button>
+            </div>
+            <div class="ai-tool-card">
+                <h3>GitHub Copilot</h3>
+                <p>Your AI pair programmer that suggests code as you type.</p>
+                <button onclick="window.location.href='https://github.com/features/copilot/'">Use GitHub Copilot</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">DEVMPIRE</div>
+        <p>© 2024 DEVMPIRE. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
