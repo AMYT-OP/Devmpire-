@@ -1,0 +1,325 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #007bff; /* Navbar background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: white; /* Navbar logo color */
+  }
+  
+  .navbar a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white; /* Navbar link color */
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #f0f0f0; /* Navbar link hover color */
+  }
+  
+  .login-btn {
+    padding: 12px 25px;
+    background-color: #fff; /* Button background color */
+    color: #007bff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #eaf4f8; /* Light blue background */
+  }
+  
+  .hero h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    padding: 15px 40px;
+    font-size: 20px;
+    background-color: #007bff; /* Hero button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Enhanced About Section */
+  .about-section {
+    padding: 80px 60px;
+    background-color: #f9f9f9; /* About section background color */
+    text-align: center;
+  }
+  
+  .about-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #007bff; /* Heading color */
+    font-weight: 700;
+  }
+  
+  .about-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .about-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .about-item {
+    width: 45%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .about-item h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .about-item p,
+  .about-item ul {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .about-item ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-content button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #007bff; /* About button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .about-content button:hover {
+    background-color: #0056b3; /* Button hover color */
+  }
+  
+  /* Enhanced Tools Section */
+  .tools-container {
+    padding: 100px 50px;
+    background-color: #f0f4ff; /* Light blue for tools section */
+    text-align: center;
+  }
+  
+  .tools-container h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #007bff; /* Heading color */
+    font-weight: 700;
+  }
+  
+  .tools-intro {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  .tools-flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .tool-card {
+    width: 30%;
+    min-width: 250px;
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .tool-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tool-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .tool-card p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .tool-card button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #007bff; /* Tool button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tool-card button:hover {
+    background-color: #0056b3; /* Button hover color */
+  }
+  
+  /* AI Tools Section */
+  .ai-tools-section {
+    padding: 80px 50px;
+    background-color: #e6f2ff; /* Light blue for AI tools section */
+    text-align: center;
+  }
+  
+  .ai-tools-section h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #007bff; /* Heading color */
+    font-weight: 700;
+  }
+  
+  .ai-tools-intro {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  .ai-tools-flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .ai-tool-card {
+    width: 30%;
+    min-width: 250px;
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .ai-tool-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ai-tool-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .ai-tool-card p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .ai-tool-card button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #007bff; /* AI tool button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ai-tool-card button:hover {
+    background-color: #0056b3; /* Button hover color */
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 60px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 30px;
+    background-color: #343a40; /* Dark footer background color */
+    color: white; /* Footer text color */
+    text-align: center;
+  }
+  
+  .footer-logo {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff; /* Social link color */
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #f0f0f0; /* Social link hover color */
+  }
+  
