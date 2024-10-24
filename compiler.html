@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Compiler - DEVMPIRE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007BFF;
+            padding: 1.5rem;
+            color: white;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            transition: background-color 0.3s;
+            font-weight: 500;
+            margin-right: 1rem;
+        }
+
+        .navbar a:hover {
+            background-color: #004494;
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .login-btn:hover {
+            background-color: #004494;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #0056b3;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #007BFF;
+        }
+
+        p {
+            margin: 1rem 0;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Iframe Section */
+        .iframe-section {
+            margin: 2rem 0;
+            text-align: center;
+            position: relative; /* Needed for precise cropping */
+            overflow: hidden; /* Ensures cropped content is hidden */
+            width: 100%; /* Full width */
+            height: 500px; /* Adjust this to control visible height */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            position: absolute; /* Allow precise placement */
+            top: -40px; /* Crop from the top */
+            left: 0px; /* Crop from the left */
+            width: 100%; /* Extend width to control the visible part */
+            height: 800px; /* Adjust height for full content */
+            border: none;
+        }
+
+        /* Info Section */
+        .info-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: #f1f3f5;
+            border-radius: 12px;
+        }
+
+        .info-section p {
+            font-size: 20px;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .benefit-card {
+            background-color: #e9ecef;
+            border-radius: 12px;
+            width: 300px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-card h3 {
+            margin-bottom: 1rem;
+            color: #0056b3;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .benefits {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DEVMPIRE</div>
+        <nav class="navbar">
+            <a href="/Home Page/main.html">Home</a>
+            <a href="#iframe-section">Tools</a>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Online Compiler Hub</h1>
+        <p>Write, compile, and run code for multiple languages with ease!</p>
+
+        <!-- Iframe Section -->
+        <div class="iframe-section" id="iframe-section">
+            <iframe src="https://onecompiler.com/java" scrolling="no" title="Online Compiler"></iframe>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section" id="info">
+            <h2>What is a Compiler?</h2>
+            <p>A compiler translates your code into machine-readable instructions, making it executable by computers.</p>
+            <p>This tool supports multiple programming languages and provides a smooth coding experience, all in one place.</p>
+        </div>
+
+        <!-- Benefits Section -->
+        <h2>Why Use Our Online Compiler?</h2>
+        <div class="benefits">
+            <div class="benefit-card">
+                <h3>Multi-Language Support</h3>
+                <p>Compile code for Python, Java, C++, and more all from one place.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Instant Results</h3>
+                <p>Run your code instantly and see outputs in real-time.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>User-Friendly Interface</h3>
+                <p>A simple and intuitive interface designed for ease of use.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">DEVMPIRE</div>
+        <p>© 2024 DEVMPIRE. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
